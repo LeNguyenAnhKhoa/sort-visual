@@ -95,8 +95,11 @@ export default class Trace {
           swaps: this.swaps,
         },
       });
+    // line 98
     } catch (e) {
       // useful for debugging to see call stack
+      // CHANGE: Add the disable comment below
+      // eslint-disable-next-line prefer-rest-params
       console.log(arguments, e);
       throw e;
     }

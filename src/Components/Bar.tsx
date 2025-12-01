@@ -16,9 +16,11 @@ interface BarProps {
   state: BarState;
   max: number;
   showNumber: boolean;
+  // line 21
   component?:
     | React.ElementType<React.HTMLAttributes<HTMLElement>>
-    | ForwardRefExoticComponent<any>;
+    // CHANGE: 'any' to 'unknown'
+    | ForwardRefExoticComponent<unknown>;
   extraProps?: object;
 }
 

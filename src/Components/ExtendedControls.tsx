@@ -76,12 +76,14 @@ const Controls = ({
   );
   const [manualError, setManualError] = useState<string | null>(null);
 
+  // line 84
   useEffect(() => {
     if (sizeBuffer !== size) {
       setSize(sizeBuffer);
       generateArray();
     }
-  }, [sizeBuffer, size]);
+    // CHANGE: Add 'generateArray' and 'setSize' to the array
+  }, [sizeBuffer, size, generateArray, setSize]);
 
   useEffect(() => {
     setManualInput(numbers.map((number) => number.value).join(", "));
