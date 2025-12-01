@@ -5,7 +5,7 @@ React + Vite/TypeScript app that visualizes several sorting algorithms (bubble, 
 ## Quick Start
 0. Clone the repo:
    ```bash
-   git clone https://github.com/LeNguyenAnhKhoa/sort_visual.git
+   git clone https://github.com/LeNguyenAnhKhoa/sort-visual.git
    ```
 1. Install Node.js >= 16 (Vite 4 needs >= 14.18; Node 16+ is recommended).
 2. Install dependencies:
