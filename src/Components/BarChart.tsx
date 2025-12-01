@@ -46,9 +46,13 @@ const BarChart = ({ trace, numbers, animation }: BarChartProps) => {
     [numbers]
   );
 
-  // line 49
-// CHANGE: Add 'animationParent' to the dependency array
-  useEffect(() => animationParent(barChartRef.current), [barChartRef.current, animationParent]);
+  // src/Components/BarChart.tsx
+
+  useEffect(() => {
+    if (barChartRef.current) {
+      animationParent(barChartRef.current);
+    }
+  }, [animationParent]); // Removed barChartRef.current
 
   useEffect(() => setAnimation(animation), [setAnimation, animation]);
 
