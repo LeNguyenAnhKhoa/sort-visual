@@ -1,8 +1,8 @@
 {
-  "name": "sorting-visualization",
+  "name": "sort-visual",
   "version": "0.2.1",
   "private": true,
-  "homepage": "https://wolflu05.github.io/sorting-visualization",
+  "homepage": "https://github.com/LeNguyenAnhKhoa/sort-visual",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
